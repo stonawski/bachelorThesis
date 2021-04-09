@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+    {% for i in range(data|length) %}
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+              <small class="mr-2"></small>
+              <small class="text-muted">{{ data.UNIQUE_RE_NUMBER[i]}}</small>
+            </div>
+            <h2><a class="article-title" href="#">{{data.LOCATION[i] }}</a></h2>
+              <small class="text-muted">{{data.RE_PRICE[i]}}</small>
+            <p class="article-content">{{ data.ADDRSS[i] }}</p>
+          </div>
+        </article>
+    {% endfor %}
+</div>
+{% endblock content %}

@@ -1,0 +1,52 @@
+body {
+  background: white;
+  color: #333333;
+  margin-top: 6rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #444444;
+}
+
+.navbar-dark {
+    background-color: #b7094c;
+}
+
+.site-header .navbar-nav .nav-link {
+  color: white;
+  font-size: 20px;
+}
+
+.site-header .navbar-nav .nav-link:hover {
+  color: #bdbdbd;
+}
+
+.content-section {
+  background: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+.btn-outline-info {
+    border: 1px solid #b7094c;
+    color: #b7094c;
+}
+
+.btn-outline-info:hover {
+    border-color: #b7094c;
+    background-color: #b7094c;
+    color: white;
+}
+.content-section{
+    background: #eeeeee;
+}
+.article-title{
+    color: #b7094c;
+}
+.article-title:hover{
+    color: #b7094c;
+}
+.form-control-file{
+    color: #b7094c;
+}
