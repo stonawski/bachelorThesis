@@ -124,7 +124,7 @@ for page in range(1, lastPageInt1):
 
             unique_code = unique_code + [unique_number]
             id_arr = id_arr + [id]
-            real_estate = real_estate + [landsTypeId]
+            real_estate = real_estate + [housesTypeId]
             address = address + [item.find(class_='advert-list-items__content-address').get_text()]
             location = location + [lctn]
             re_id = re_id + [id]
@@ -270,7 +270,7 @@ for page in range(1, lastPageInt1):
 
             unique_code = unique_code + [unique_number]
             id_arr = id_arr + [id]
-            real_estate = real_estate + [landsTypeId]
+            real_estate = real_estate + [flatsTypeId]
             address = address + [item.find(class_='advert-list-items__content-address').get_text()]
             location = location + [lctn]
             re_id = re_id + [id]

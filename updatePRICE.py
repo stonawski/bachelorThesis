@@ -31,7 +31,7 @@ allPages = bs.find_all(class_='paginator__list-item')
 lastPageStr1 = allPages[8].find('a').get_text()
 lastPageInt1 = int(lastPageStr1)
 
-conn = sqlite3.connect('StonawskiDB3.db')
+conn = sqlite3.connect('FinalDB.db')
 conn.row_factory = lambda cursor, row: row[0]
 c = conn.cursor()
 unique_numbers = c.execute('SELECT UNIQUE_RE_NUMBER FROM REAL_ESTATE').fetchall()

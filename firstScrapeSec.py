@@ -310,11 +310,11 @@ FlatInf_frame = pd.DataFrame(
 conn = sqlite3.connect('FinalDB.db')
 c = conn.cursor()
 
-RE_frame.to_sql('REAL_ESTATE', conn, if_exists='replace', index=False)
-Addrss_frame.to_sql('ADDRESS', conn, if_exists='replace', index=False)
-Price_frame.to_sql('PRICE', conn, if_exists='replace', index=False)
-Info_frame.to_sql('INFORMATION', conn, if_exists='replace', index=False)
-FlatInf_frame.to_sql('FLATINFO', conn, if_exists='replace', index=False)
+RE_frame.to_sql('REAL_ESTATE', conn, if_exists='append', index=False)
+Addrss_frame.to_sql('ADDRESS', conn, if_exists='append', index=False)
+Price_frame.to_sql('PRICE', conn, if_exists='append', index=False)
+Info_frame.to_sql('INFORMATION', conn, if_exists='append', index=False)
+FlatInf_frame.to_sql('FLATINFO', conn, if_exists='append', index=False)
 
 conn.close()
 
@@ -468,10 +468,10 @@ LandInf_frame = pd.DataFrame(
 conn = sqlite3.connect('FinalDB.db')
 c = conn.cursor()
 
-RE_frame.to_sql('REAL_ESTATE', conn, if_exists='replace', index=False)
-Addrss_frame.to_sql('ADDRESS', conn, if_exists='replace', index=False)
-Price_frame.to_sql('PRICE', conn, if_exists='replace', index=False)
-Info_frame.to_sql('INFORMATION', conn, if_exists='replace', index=False)
-LandInf_frame.to_sql('LANDINFO', conn, if_exists='replace', index=False)
+RE_frame.to_sql('REAL_ESTATE', conn, if_exists='append', index=False)
+Addrss_frame.to_sql('ADDRESS', conn, if_exists='append', index=False)
+Price_frame.to_sql('PRICE', conn, if_exists='append', index=False)
+Info_frame.to_sql('INFORMATION', conn, if_exists='append', index=False)
+LandInf_frame.to_sql('LANDINFO', conn, if_exists='append', index=False)
 
 conn.close()
